@@ -1,0 +1,21 @@
+name: First CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Print message
+        run: echo "🚀 CI PIPELINE STARTED! Code pushed by $GITHUB_ACTOR"
+
+      - name: List project files
+        run: ls -al
+
+      - name: Success message
+        run: echo "🎉 Pipeline finished successfully!"
