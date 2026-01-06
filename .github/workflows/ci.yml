@@ -1,21 +1,22 @@
-name: First CI Pipeline
+name: CI Day 2 Practice
 
-on:
-  push:
-    branches: [ "main" ]
+on: [push]
 
 jobs:
-  build:
+  demo:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Print message
-        run: echo "🚀 CI PIPELINE STARTED! Code pushed by $GITHUB_ACTOR"
+      - name: Step 1
+        run: echo "🚀 CI PIPELINE STARTED"
 
-      - name: List project files
-        run: ls -al
+      - name: Step 2
+        run: ls
 
-      - name: Success message
-        run: echo "🎉 Pipeline finished successfully!"
+      - name: Step 3
+        run: echo "About to FAIL"
+
+      - name: Step 4
+        run: exit 1
