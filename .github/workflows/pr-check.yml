@@ -1,4 +1,4 @@
-name: PR Quality Check
+name: 1v PR Quality Check
 
 on:
   push:
