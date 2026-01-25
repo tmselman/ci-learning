@@ -16,4 +16,4 @@ jobs:
       - name: Run a simple test
         run: |
           echo "Running CI tests..."
-          exit 0
+          exit 1
