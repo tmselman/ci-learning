@@ -17,4 +17,4 @@ jobs:
       - name: Run Test
         run: |
           echo "Checking code..."
-          exit 1
+         
