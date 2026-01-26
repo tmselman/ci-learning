@@ -14,4 +14,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Force Failure
-        run: echo "CI FIXED"
+        run: echo "all good"
